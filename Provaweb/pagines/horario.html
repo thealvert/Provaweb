@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="./style/general.css">
 <head>
 <style>
+
 table {
 	border: 12px solid #275a34;
     border-radius: 10px;	
     border-style: double;
+	width: 100%;
     }
     
 th, td {
@@ -14,99 +17,107 @@ th, td {
     text-align: center;
     padding: 10px;	
     font-family: 'Brush Script MT', cursive;
-	
     }
 h2 {
 	text-align: center;
     color: #503103; 
     font-family: verdana;
 }
-tr:nth-child(even) {
-	background-color:  #D6EEEE;
-}
-th:nth-child(even),td:nth-child(even) {
-  background-color: #96d4d466;
-}
-tr:nth-child(odd) {
-	background-color:  white;
-}
 body {
-    background-color: blanchedalmond;
+    background-color: #fcf7ef;
+}
+.SR {
+	background-color: #81a6f5
+}
+.Days {
+	background-color:blanchedalmond;
+}
+.SOR {
+	background-color: #e05a70;
+}
+.SI {
+	background-color: darkkhaki;
+}
+.EIE {
+	background-color: tomato;
+}
+.AW {
+	background-color: #daa5da;
+}
+.H {
+	background-color: blanchedalmond;
+}
+.T {
+	background-color: blueviolet;
 }
 </style>
 </head>
 <body>
-
+	<header>
+		<footer>
+			<a href="../index.html">Home</a>
+		</footer>
 	<h2>Horario</h2>
 
 	<table border="1" style="margin: 0 auto;">
   		<caption>Horario 21/22</caption>
  		 <tr style="font-size:140%;">
-  			 <th></th>
-   			 <th>Lunes</th>
-    		 <th>Martes</th>
-    		 <th>Miercoles</th>
-    		 <th>Jueves</th>
-    		 <th>Viernes</th>
+  			 <th class="Days"></th>
+   			 <th class="Days">Lunes</th>
+    		 <th class="Days">Martes</th>
+    		 <th class="Days">Miercoles</th>
+    		 <th class="Days">Jueves</th>
+    		 <th class="Days">Viernes</th>
         </tr>
         <tr>
-          	<th style="font-size: 120%;">8:00-8:55</th>
-          	 <td>Servicios en Red</td>
-          	 <td>Sistemas Operativos en Red</td>
-          	 <td>Seguridad Informática</td>
-         	 <td>Servicios en Red</td>
-         	 <td>Seguridad Informática</td>
+          	<th style="font-size: 120%;"; class="H">8:00-8:55</th>
+          	 <td rowspan="2"; class="SR">Servicios en Red</td>
+          	 <td rowspan="3"; class="SOR">Sistemas Operativos en Red</td>
+          	 <td rowspan="2"; class="SI">Seguridad Informática</td>
+         	 <td rowspan="2"; class="SR">Servicios en Red</td>
+         	 <td rowspan="2"; class="SI">Seguridad Informática</td>
   		</tr>
   		<tr>
-   			<th style="font-size: 120%;">8:55:9:50</th>
-   			 <td>Servicios en Red</td>
-   			 <td>Sistemas Operativos en Red</td>
-   			 <td>Seguridad Informática</td>
-   			 <td>Servicios en Red</td>
-   			 <td>Seguridad Informática</td>
+   			<th style="font-size: 120%;"; class="H">8:55:9:50</th>
   		</tr>
   		<tr>
-   			<th style="font-size: 120%;">9:50-10:45</th>
-   			 <td>Empresa i Iniciativa Emprendedora</td>
-   			 <td>Sistemas Operativos en Red</td>
-   			 <td>Empresa i Iniciativa Emprendedora</td>
-   			 <td>Aplicaciones WEB</td>
-   			 <td>Servicios en Red</td>
+   			<th style="font-size: 120%;"; class="H">9:50-10:45</th>
+   			 <td class="EIE">Empresa i Iniciativa Emprendedora</td>
+   			 <td class="EIE">Empresa i Iniciativa Emprendedora</td>
+   			 <td class="AW">Aplicaciones WEB</td>
+   			 <td class="SR">Servicios en Red</td>
   		</tr>
   		<tr>
-    		<th style="font-size: 120%;">10:45-11:15</th>
+    		<th style="font-size: 120%;"; class="H">10:45-11:15</th>
     		 <td colspan="5">Patio</td>
   		</tr>
   		<tr>
-    		<th style="font-size: 120%;">11:15-12:10</th>
-    		 <td>Sistemas Operativos en Red</td>
-    		 <td>Seguridad Informática</td>
-    		 <td>Empresa i Iniciativa Emprendedora</td>
-    		 <td>Aplicaciones WEB</td>
-    		 <td>Servicios en Red</td>
+    		<th style="font-size: 120%;"; class="H">11:15-12:10</th>
+    		 <td rowspan="3"; class="SOR">Sistemas Operativos en Red</td>
+    		 <td class="SI">Seguridad Informática</td>
+    		 <td class="EIE">Empresa i Iniciativa Emprendedora</td>
+    		 <td rowspan="2"; class="AW">Aplicaciones WEB</td>
+    		 <td  class="SR">Servicios en Red</td>
   		</tr>
   		<tr>
-    		<th style="font-size: 120%;">12:10-13:05</th>
-    		 <td>Sistemas Operativos en Red</td>
-    		 <td>Aplicaciones WEB</td>
-    		 <td>Servicios en Red</td>
-             <td>Aplicaciones WEB</td>
-             <td>Sistemas Operativos en Red</td>
+    		<th style="font-size: 120%;"; class="H">12:10-13:05</th>
+    		 <td rowspan="2"; class="AW">Aplicaciones WEB</td>
+    		 <td rowspan="2";  class="SR">Servicios en Red</td>
+             <td rowspan="2"; class="SOR">Sistemas Operativos en Red</td>
   		</tr>
   		<tr>
-    		<th style="font-size: 120%;">13:05-14:00</th>
-    		 <td>Sistemas Operativos en Red</td>
-    		 <td>Aplicaciones WEB</td>
-    		 <td>Servicios en Red</td>
-    		 <td>Seguridad Informática</td>
-    		 <td>Sistemas Operativos en Red</td>
+    		<th style="font-size: 120%;"; class="H">13:05-14:00</th>
+    		 <td class="SI">Seguridad Informática</td>
   		</tr>
   		<tr>
-    		<th style="font-size: 120%;">14:00-14:55</th>
-    		 <td>Tutoria</td>
+    		<th style="font-size: 120%;"; class="H">14:00-14:55</th>
+    		 <td class="T">Tutoria</td>
     		 <td colspan="4"></td>
   		</tr>
 	</table>
-
+	<header>
+		<footer>
+			<a href="../index.html">Home</a>
+		</footer>
 </body>
 </html>

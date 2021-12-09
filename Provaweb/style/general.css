@@ -1,0 +1,57 @@
+table {
+	border: 12px solid #275a34;
+    border-radius: 10px;	
+    border-style: double;
+	width: 100%;
+    }
+    
+th, td {
+	border: 2px solid;
+	border-color: #0b6b6b;
+    text-align: center;
+    padding: 10px;	
+    font-family: 'Brush Script MT', cursive;
+    }
+h2 {
+	text-align: center;
+    color: #503103; 
+    font-family: verdana;
+}
+body {
+    background-color: #fcf7ef;
+}
+.SR {
+	background-color: #81a6f5
+}
+.Days {
+	background-color:blanchedalmond;
+}
+.SOR {
+	background-color: #e05a70;
+}
+.SI {
+	background-color: darkkhaki;
+}
+.EIE {
+	background-color: tomato;
+}
+.AW {
+	background-color: #daa5da;
+}
+.H {
+	background-color: blanchedalmond;
+}
+.T {
+	background-color: blueviolet;
+}
+h1{
+    color:black;
+    text-align:center;
+    font-size:50px;
+    text-align:center
+}
+div{
+    font-size:150px;
+    color:green;
+    text-align:center;
+}   
