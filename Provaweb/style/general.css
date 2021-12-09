@@ -58,3 +58,9 @@ div{
     color:green;
     text-align:center;
 }   
+header,footer {
+    background-image: linear-gradient(to left, cyan, gray, blue);
+}
+header, footer{
+	text-align: center;
+}
