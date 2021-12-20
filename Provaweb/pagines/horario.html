@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="./style/general.css">
+<link rel="stylesheet" href="../style/general.css">
 <head>
 <style>
 
@@ -66,13 +66,49 @@ body {
 header, footer{
 	text-align: center;
 }
+.home {
+	background-color: burlywood;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #413c3c;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li a {
+	display:  block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+.active{
+	background-color: #4caf50;
+}
 </style>
 </head>
 <body>
 	<header>
-		<footer>
-			<a href="../index.html">Home</a>
-		</footer>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="./holamon.html">Món</a></li>
+			<li><a href="./rellotge.html">Reloj</a></li>
+			<li><a href="./calendario.html">Calendario</a></li>
+			<li><a class="active" href="../pagines/horario.html">Horario</a></li>
+			<li style="float: right"><a href="./Sobremi.html">Sobre mi</a></li>
+		</ul>
+	</header>
 	<h2>Horario</h2>
 
 	<table border="1" style="margin: 0 auto;">
@@ -131,9 +167,5 @@ header, footer{
     		 <td colspan="4"; class="ND"></td>
   		</tr>
 	</table>
-	<header>
-		<footer>
-			<a href="../index.html">Home</a>
-		</footer>
 </body>
 </html>

@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-    <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="../style/general.css">
     <head>
-        <header>
-            <footer>
-                <a href="../index.html">Home</a>
-            </footer>
-        </header>
         <title>Rellotge</title>
         <meta charset="UTF-8">
         <style>
@@ -21,8 +16,34 @@
                 text-align:center;
             }   
             header, footer{
-	        text-align: center;
-            
+	            text-align: center;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #413c3c;
+                position: -webkit-sticky; /* Safari */
+                position: sticky;
+                top: 0;
+            }
+            li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+            li a {
+                display:  block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #111;
+            }
+            .active{
+                background-color: #4caf50;
             }
         </style>
         <script>
@@ -44,12 +65,18 @@
         </script>
     </head>
     <body onload="startTime()">
+        <header>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./holamon.html">Món</a></li>
+                <li><a class="active" href="./rellotge.html">Reloj</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="../pagines/horario.html">Horario</a></li>
+                <li style="float: right"><a href="./Sobremi.html">Sobre mi</a></li>
+            </ul>
+        </header>
         <h1>Rellotge Aplicaciones Web</h1>
         <div id="txt"></div>
-        <header>
-            <footer>
-                <a href="../index.html">Home</a>
-            </footer>
     </body>
     <body style="background-color: springgreen;"></body>
 </html>
