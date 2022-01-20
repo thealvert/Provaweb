@@ -68,25 +68,25 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: rgb(247, 215, 128);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
 }
 li {
 	float: left;
-	border-right: 1px solid #bbb;
+	border-right: 1px solid rgb(0, 0, 0);
 }
 li a {
 	display:  block;
-	color: white;
+	color: rgb(0, 0, 0);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 li a:hover {
-	background-color: #111;
+	background-color: rgb(247, 123, 8);
 }
 .active{
-	background-color: #4caf50;
+	background-color: #e9a245;
 }
